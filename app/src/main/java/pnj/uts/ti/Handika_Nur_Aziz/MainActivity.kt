@@ -31,16 +31,12 @@ class MainActivity : AppCompatActivity() {
 
             val input1 = inputEmail.text.toString()
             val input2 = inputPassword.text.toString()
-            val hardcode1 = hardcodedEmail1
-            val hardcode2 = hardcodedPassword1
-            val hardcode3 = hardcodedEmail2
-            val hardcode4 = hardcodedPassword2
 
             if (input1 == hardcodedEmail1 && input2 == hardcodedPassword1) {
-                val intent = Intent(this,FragmentHome::class.java)
+                val intent = Intent(this,FragmentMain::class.java)
                 startActivity(intent)
             } else if (input1 == hardcodedEmail2 && input2 == hardcodedPassword2) {
-                val intent = Intent(this,FragmentHome::class.java)
+                val intent = Intent(this,FragmentMain::class.java)
                 startActivity(intent)
             } else {
                 Toast.makeText(this, "No user login data found", Toast.LENGTH_SHORT).show()
