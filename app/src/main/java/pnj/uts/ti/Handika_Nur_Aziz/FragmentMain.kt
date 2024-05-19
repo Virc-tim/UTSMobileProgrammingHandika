@@ -26,6 +26,25 @@ class FragmentMain : AppCompatActivity() {
                 }
             }
         }
+
+        bottomNavigationView.setOnItemReselectedListener { menuItem ->
+            when(menuItem.itemId) {
+                R.id.fragnews -> {
+                    replaceFragment(FragmentNews())
+                    true
+                }
+            }
+        }
+
+        bottomNavigationView.setOnItemReselectedListener { menuItem ->
+            when(menuItem.itemId) {
+                R.id.fragprofile -> {
+                    replaceFragment(FragmentProfile())
+                    true
+                }
+            }
+        }
+
         replaceFragment(FragmentHome())
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->

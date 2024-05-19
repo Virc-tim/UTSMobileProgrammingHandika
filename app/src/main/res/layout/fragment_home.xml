@@ -6,9 +6,28 @@
     tools:context=".FragmentHome">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <FrameLayout
         android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:background="#8ab7ff">
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="192dp"
+        android:layout_height="118dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="100dp"
+        android:fontFamily="sans-serif"
+        android:text="Tentang Aplikasi"
+        android:textSize="48sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="351dp"
         android:layout_height="match_parent"
-        android:text="home" />
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="250dp"
+        android:text="Aplikasi Pendataan Alumni adalah sebuah solusi inovatif yang dirancang khusus untuk mengelola dan mengoptimalkan data alumni. Aplikasi ini hadir sebagai jawaban atas kebutuhan akan sistem pendataan yang efisien, terintegrasi, dan mudah diakses dengan tampilan yang sederhana namun elegan."
+        android:textSize="24sp" />
 
 </FrameLayout>
